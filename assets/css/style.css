@@ -1,0 +1,198 @@
+/* Universal Selector */
+* {
+    margin:0;
+    padding:0;  
+}
+
+/* Element Selectors */
+body {
+    font-family: sans-serif;
+}
+
+header div{
+    display: flex;
+    background-color:rgb(50, 53, 68);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header div nav ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  gap: 25px;
+  padding-top: 15px;
+}
+
+header div nav ul li {
+    display: flex;
+    border-bottom: 3px solid turquoise;
+    padding: 5px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+header div nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: turquoise;
+    font-size: small;
+
+
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    display: flex;
+    color: rgb(50, 53, 68);
+    background: turquoise;
+    padding-left: 100px;
+    padding-right: 5px;
+    margin-right: 50px;
+}
+
+h2{
+  background:turquoise;
+  color: rgb(50, 53, 68);
+  padding:3px 5px 3px 5px;
+  display:inline-block;
+  margin-left:10px;
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    color: turquoise;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer a{
+    color: rgb(18, 75, 121);
+    border-bottom: 3px solid turquoise;
+    text-decoration: none;
+}
+
+/* ID Selectors */
+#about-me {
+    display: flex;
+    padding-bottom: 50px;
+    
+}
+
+#work {
+    display: flex;
+    padding-bottom: 50px;
+    padding-right: 685px;
+}
+
+#contact {
+    display: flex;
+}
+
+
+/* Class Selectors */
+.subtitle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image:url("../images/pexels-pixabay-164425.jpg");
+    background-size: 800px;
+}
+
+
+.logo, nav {
+    flex: 1;
+}
+.logo{
+    display: flex;
+      margin: 10px 0px 0px 0px;
+}
+
+.side {
+    flex: 0 0 15%;
+}
+
+.side h3{
+    border:3px; 
+    border-right:solid; 
+    border-color:rgb(18, 75, 121); 
+    height: 170px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    color: rgb(18, 75, 121);
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+.selfie{
+    max-width:10%;
+    height:50%;
+    float: left;
+    margin: 5px 10px 10px 20px;
+}
+
+.about-photo{
+    padding-left: 0px;
+    padding-right: 70px;
+    margin-right: 55px;
+    text-align: justify;
+    justify-content: flex-end;
+}
+
+.side-work {
+    flex: 0 0 15%;
+    border:3px; 
+    border-right:solid; 
+    border-color:rgb(18, 75, 121); 
+    height: 480px;
+    padding-bottom: 50px;
+    padding-right: 0px;
+    color: rgb(18, 75, 121);
+    margin-left:90px;
+    margin-right:25px;
+}
+
+.side-work h3 {
+    padding-left: 10px;
+    
+}
+
+.pic1{
+
+}
+  
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-container div a {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.work-portfolio1{
+    display: flex;
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
