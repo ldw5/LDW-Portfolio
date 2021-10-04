@@ -216,9 +216,8 @@ footer p {
   }
   
   .flex-item {
-    border: 5px solid var(--secondary);
-    background-color: var(--primary);
-    color: var(--tertiary);
+    background-color: rgba(68, 88, 119, 1);
+    color: whitesmoke;
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
@@ -251,6 +250,29 @@ footer p {
   .flex-item h3 {
     font-size: 1.6rem;
   }
+
+  /* portfolio project images */
+  .Horiseon {
+    background-image: url("../images/Screen\ Shot\ 2021-10-04\ at\ 12.26.50\ PM.png");
+  }
+  
+  .Perfect-Pet-Placer {
+    background-image: url("../images/Screen\ Shot\ 2021-10-04\ at\ 12.23.41\ PM.png");
+  }
+  
+  .react-calc {
+    background-image: url("../images/02-portfolio-2.jpg");
+  }
+  
+  .pastel-puzzles {
+    background-image: url("../images/02-portfolio-3.jpg");
+  }
+  
+  .surf-report {
+    background-image: url("../images/02-portfolio-4.jpg");
+  }
+  
+  /* end portfolio project images */
 
   @media screen and (max-width: 980px) {
     header {
