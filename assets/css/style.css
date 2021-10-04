@@ -40,8 +40,6 @@ header div nav ul li a {
     text-decoration: none;
     color: turquoise;
     font-size: small;
-
-
 }
 
 h1{
@@ -80,6 +78,15 @@ footer a{
     text-decoration: none;
 }
 
+footer h3{
+    color: rgb(18, 75, 121);
+    text-align: right;
+}
+
+footer p {
+    color: rgb(18, 75, 121);
+}
+
 /* ID Selectors */
 #about-me {
     display: flex;
@@ -87,18 +94,21 @@ footer a{
     
 }
 
-#work {
-    display: flex;
-    padding-bottom: 50px;
-    padding-right: 685px;
-}
-
 #contact {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
 /* Class Selectors */
+
+.page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 .subtitle {
     display: flex;
     justify-content: flex-end;
@@ -120,19 +130,20 @@ footer a{
 }
 
 .side {
-    flex: 0 0 15%;
+    flex: 0 0 22.6%;
 }
 
 .side h3{
-    border:3px; 
-    border-right:solid; 
-    border-color:rgb(18, 75, 121); 
+    display: flex;
+    border-right: 4px solid rgb(18, 75, 121);
     height: 170px;
-    padding-left: 50px;
+    text-align: right;
+    padding-right: 15px;
     padding-bottom: 50px;
     color: rgb(18, 75, 121);
     margin-left:10px;
     margin-right:10px;
+    font-size: 4vw;
 
 }
 
@@ -152,7 +163,7 @@ footer a{
 }
 
 .side-work {
-    flex: 0 0 15%;
+    flex: 0 0 20%;
     border:3px; 
     border-right:solid; 
     border-color:rgb(18, 75, 121); 
@@ -168,31 +179,129 @@ footer a{
     padding-left: 10px;
     
 }
-
-.pic1{
-
-}
   
-.flex-container {
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
-}
-
-.flex-container div a {
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .page-section > h3 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid rgb(18, 75, 121);
+    font-size: 4vw;
+    line-height: 1.1;
+    color: rgb(18, 75, 121);
+  }
+  
+  .page-section > div {
+    flex: 0 0 77%;
+  }
+  
+  .page-section p {
+    margin-bottom: 20px;
+  }
+  
+  .flex-container {
     display: flex;
-    flex-direction: row;
-
-}
-
-.work-portfolio1{
-    display: flex;
-}
-
-#contact{
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+  }
+  
+  .flex-item {
+    border: 5px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--tertiary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
+  
+  /* feature first portfolio item */
+  .flex-item:first-child {
+      min-height: 400px;
+      flex-basis: 100%;
+  }
+  
+  .flex-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .flex-item div {
+    background-color: var(--secondary);
+    padding: 8px 10px;
+  }
+  
+  .flex-item h3 {
+    font-size: 1.6rem;
+  }
 
-}
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h3 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    #contact {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
